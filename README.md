@@ -100,6 +100,8 @@ sudo docker run -d -p 58080:80 -p 58443:443 jnyryan/simplesamlphp
 
 To use your own configs stored on the host in /var/simplesamlphp
 
+NOTE: If you are using Mac OS X, you should read this first: http://stackoverflow.com/questions/31353157/boot2docker-docker-django-on-mac-os-x/31353343#31353343
+
 ``` bash
 sudo docker run -d -p 58080:80 -p 58443:443 \
 -v /var/simplesamlphp/config/:/var/simplesamlphp/config/ -v /var/simplesamlphp/metadata/:/var/simplesamlphp/metadata/ -v /var/simplesamlphp/cert/:/var/simplesamlphp/cert/ \
